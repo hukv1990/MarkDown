@@ -23,7 +23,10 @@ sudo apt-get install ecryptfs-utils
   ```bash
   sudo mount -t ecryptfs /disk2/.Private /disk2
   ```
-- **<span style="color:red;">注意：一定要记住密码</span>**
+  
+  ![img](eCryptfs.assets/0_13061315216OOV.gif)
+  
+  **<span style="color:red;">注意：一定要记住Passphrase、cipher和key bytes</span>**
 
 
 ## 卸载目录
@@ -32,7 +35,7 @@ sudo apt-get install ecryptfs-utils
 	sudo umount /disk2
 ```
 
-
+卸载目录之后原始的文件读取不了，该文件夹只有正确重新挂载之后才能够正常读写。
 
 
 
